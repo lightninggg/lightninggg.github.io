@@ -3,9 +3,251 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Lightning</title>
+	<style type="text/css">
+		body{
+			margin:0;
+			padding:0;
+			width: 100%;
+			height:100%;
+			background-color: #777;
+			background-position: center;
+			}
+		#div0{
+			margin-left: 15%;
+			width: 70%;
+		}
+		#div1{
+		/* 	margin-left: 15%;
+		width: 70%; */
+			background:#555;
+			border-radius: 1.5em;
+			/*background-position: center;*/
+			
+		}
+		body.one-column #container{
+			
+			color: #66CC33;
+			display: block;
+			
+		}
+		h1{
+			font-size: 70px;
+			font-variant: small-caps;
+			text-align: center;
+
+		}
+		
+		#span1{
+			/*background:#666;*/
+			width: 100%;
+			display: block;
+			font-size: 50px;
+			font-style: italic;
+			font-weight: bold;
+			/*border-radius: 0.5em;*/
+		}
+		#list{
+				padding-left: 30%;
+				padding-bottom: 10px
+		}
+		ul li{ 
+				margin-top: 3px;
+				list-style-type: square;
+				list-style-position: inside;
+				font-size: 30px;
+			} 
+
+		a{ 		
+			text-decoration: none;	 	
+			color: #66CC33;
+		}  
+
+		ul li a:hover{
+				border-radius: 0.5em;
+				background:#666699;
+				/*width: 100%;*/
+				/*display: block;*/
+				font-weight: 900;  
+			}
+
+		#span1 a:hover{
+				text-decoration:underline; 
+				background:#666699;
+				border-radius: 0.5em;
+				/* width: 100%;
+				display: block; */
+				/*font-weight: 200; */
+		}
+
+		#footer{
+			/*background-color: #777;*/
+			margin-top: -10px;
+			text-align: right;
+			color:#222; 
+			font-size: 15px;
+		}
+	 	.newfooter{
+		text-align: center;
+		margin-top: -305px;
+		} 
+		#footer a:hover{
+			background:#666699;
+			text-decoration: underline;
+		}
+	/* .invisible{
+		visibility: hidden;
+		display: 
+	} */
+		button{
+			margin-bottom: 20%;
+		}
+		.invisible{
+			display: none;
+		}
+
+		.li-details{
+			margin-left:35%;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="http://www.bootcss.com/p/buttons/css/buttons.css">
 </head>
+
+
 <body>
-  <h1>If u want to see his blog click this link : <a href="http://incityzhang.cn/blog/">Lightning's blog</a></h1>
+		
+	<h1 id="guide">Guide  Page</h1>
+
+	<div class="invisible" id="JS-Learning">
+		<center>
+				<button class="button-3d" id="back_btn_1">
+					Back
+				</button>
+		</center>
+	</div>
+	<div class="invisible" id="Travel">
+		
+		<ul class="li-details">
+
+			<li>
+				<a href="http://incityzhang.cn/blog/%E4%BA%91%E5%8D%97%E6%B8%B8%E8%AE%B0%E6%B8%B8%E8%AE%B0%E6%80%BB%E8%BF%B0/">云南游记：游记总述</a>
+			</li>
+
+			<li>
+				<a href="http://incityzhang.cn/blog/%E4%BA%91%E5%8D%97%E6%B8%B8%E8%AE%B0Day00%E6%99%9A/">云南游记：Day-0-晚</a>
+			</li>
+
+			<li>
+				<a href="http://incityzhang.cn/blog/%E4%BA%91%E5%8D%97%E6%B8%B8%E8%AE%B0Day00PM/">云南游记：Day-0-PM</a>
+			</li>
+
+		</ul>
+
+		<center>
+				<button class="button-3d" id="back_btn_2">
+					Back
+				</button>
+		</center>
+	</div>
+	<div class="invisible" id="Summary">
+		<ul class="li-details">
+
+			<li>
+				<a href="http://incityzhang.cn/blog/%E8%AE%A4%E8%AF%86%E5%AE%9E%E4%B9%A0%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93/">个人学期总结</a>
+			</li>
+
+		</ul>
+
+		<center>
+				<button class="button-3d" id="back_btn_3">
+					Back
+				</button>
+		</center>
+	</div>
+
+	<div class="invisible" id="Feeling">
+
+		<ul class="li-details">
+
+			<li>
+				<a href="http://incityzhang.cn/blog/%E6%8E%A2%E5%AF%BB%E5%AD%A4%E7%8B%AC/">探寻孤独</a>
+			</li>
+
+		</ul>
+
+		<center>
+				<button class="button-3d" id="back_btn_4">
+					Back
+				</button>
+		</center>
+	</div>
+	<div class="invisible" id="Design">
+		<center>
+				<button class="button-3d" id="back_btn_5">
+					Back
+				</button>
+		</center>
+	</div>
+
+
+	<div id="div0">
+		<div id="div1" class="one-column">
+			<div id="container">
+				<div id="container-content">
+					<center>
+						<span id="span1"><a href="http://incityzhang.cn/blog">Lightning's Blog</a></span>
+					</center>
+					<div id="list">
+						<ul>
+							<li><a href="#">JS-Learning</a></li>
+							<li><a href="#">Travel</a></li>
+							<li><a href="#">Summary</a></li>
+							<li><a href="#">Feeling</a></li>
+							<li><a href="#">Design</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- <div id="footer"> 
+						<div id="footer" style="">
+							<p>@2017&nbsp;<a href="#">Lightning's Blog</a></p>
+						</div>
+					</div> -->	
+				
+			</div>
+		</div>
+
+			<div id="footer">
+				<div id="footer-content">
+					<p>@2017&nbsp;&nbsp;<a href="https://about.me/lightning_zhang" target="_blank">Lightning</a>'s Blog</p>
+				</div>
+			</div>
+
+		</div>	
+
+
+	 <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('li').click(function(){
+				var objString = $(this).text();
+				$('#div1').hide();
+				/*alert(objString);
+				alert($('#'+objString).attr('id'));*/
+				$('#'+objString).css('display','inline');
+				$('#guide').html(objString);
+				
+				$('#footer-content').attr('class','newfooter');
+
+				$('button').click(function(){
+					$('#'+objString).css('display','none');
+					$('#guide').html("Guide Page");
+					$('#div1').show();
+					$('#footer-content').removeAttr('class');
+				});
+
+			});
+
+
+		});
+	</script>
 </body>
 </html>
-
