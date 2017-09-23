@@ -86,13 +86,17 @@
 			color:#222; 
 			font-size: 15px;
 		}
-	 	.newfooter{
-		text-align: center;
-		margin-top: -305px;
-		} 
-		#footer a:hover{
-			background:#666699;
-			text-decoration: underline;
+	 	@media (min-width: 641px) and (max-width: 770px) {
+			.newfooter{
+			text-align: center;
+			margin-top: -200px;
+			} 
+		}
+		@media(min-width: 771px){
+			.newfooter{
+			text-align: center;
+			margin-top: -160px;
+			} 
 		}
 	/* .invisible{
 		visibility: hidden;
